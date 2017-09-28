@@ -3,7 +3,7 @@
     "compilerOptions": {
         "outDir": "../../dist/main",
         "baseUrl": "./",
-        "module": "es2015",
+        "module": "commonjs",
         "types": []
     },
     "exclude": [

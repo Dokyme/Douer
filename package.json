@@ -8,7 +8,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "main":"tsc -w -p ./src/main",
+    "renderer":"ng build -watch ",
+    "electron":"electron ./dist/main/main.js"
   },
   "private": true,
   "dependencies": {
