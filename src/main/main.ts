@@ -9,7 +9,6 @@ function createWindow() {
         show: false
     });
     win.loadURL("file://" + __dirname + "/../renderer/index.html");
-    win.webContents.openDevTools();
     win.on("closed", () => win = null);
     win.on("ready-to-show", () => {
         win.show();

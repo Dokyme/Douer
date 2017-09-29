@@ -9,9 +9,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "main":"tsc -w -p ./src/main",
-    "renderer":"ng build -watch ",
-    "electron":"electron ./dist/main/main.js"
+    "main": "tsc -w -p ./src/main",
+    "renderer": "ng build -watch ",
+    "electron": "electron ./dist/bundle/main/main.js",
+    "pack": "electron-packager ./dist/bundle --overwrite --electron-version=1.7.6 --out=./dist"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +26,9 @@
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
+    "electron-packager": "^9.1.0",
+    "font-awesome": "^4.7.0",
+    "primeng": "^4.2.1",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
